@@ -49,6 +49,7 @@ android {
 
             val apiKey: String = gradleLocalProperties(rootDir, providers).getProperty("API_KEY") ?: ""
             buildConfigField("String", "API_KEY", "\"$apiKey\"")
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
     compileOptions {
@@ -100,5 +101,9 @@ dependencies {
 
     // Timber
     implementation(libs.jakewharton.timber)
+
+    // Paging
+    implementation(libs.androidx.paging.compose)
+    implementation(libs.androidx.paging.runtime)
 
 }
