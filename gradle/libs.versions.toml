@@ -14,6 +14,7 @@ hilt = "2.51.1"
 hilt-compose = "1.2.0"
 
 ksp = "2.0.0-1.0.22"
+pagingCompose = "3.3.0"
 
 retrofit = "2.11.0"
 okhttp = "5.0.0-alpha.14"
@@ -44,6 +45,9 @@ hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hil
 hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hilt-compose" }
 
 jakewharton-timber = { module = "com.jakewharton.timber:timber", version.ref = "jakewhartonTimber" }
+
+androidx-paging-compose = { module = "androidx.paging:paging-compose", version.ref = "pagingCompose" }
+androidx-paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "pagingCompose" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
