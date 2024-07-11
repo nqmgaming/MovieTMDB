@@ -106,4 +106,16 @@ dependencies {
     implementation(libs.androidx.paging.compose)
     implementation(libs.androidx.paging.runtime)
 
+    // Compose dependencies
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.accompanist.flowlayout)
+
+    // RamCosta Navigation
+    implementation(libs.compose.destination.core)
+    ksp(libs.compose.destination.ksp)
+
+    // Navigation animation
+    implementation(libs.accompanist.navigation.animation)
+
 }
